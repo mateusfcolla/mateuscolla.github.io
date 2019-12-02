@@ -22,19 +22,20 @@ section {
 }
 
 #Home{
-    background: #3aff28;
-    color: black!important;
+    background: #50ff40;
+    color: #141414!important;
 }
 
 #About{
     background: #ffffff;
-    color: #3aff28!important;
+    color: #50ff40!important;
 }
 
 #Portfolio{
     background: #141414;
     color: white;
 }
+
 
 .bg-jumbotron{
     background: #141414;
