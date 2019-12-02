@@ -26,14 +26,26 @@ section {
     color: #141414!important;
 }
 
+#Thome{
+    color: white;
+}
+
 #About{
     background: #ffffff;
     color: #50ff40!important;
 }
 
+#Tabout{
+    color: #141414;
+}
+
 #Portfolio{
     background: #141414;
     color: white;
+}
+
+#Tport{
+    color: #50ff40;
 }
 
 
