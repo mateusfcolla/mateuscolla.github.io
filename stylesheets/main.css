@@ -1,4 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    background: rgb(20, 20, 22);
+    background: #141414;
     color: white!important;
+    font-family: 'PT Sans', sans-serif!important;
+    line-height: 1.6;
+    height: 100vh;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Home{
+    background: #3aff28;
+    color: black!important;
+}
+
+#About{
+    background: #ffffff;
+    color: #3aff28!important;
+}
+
+#Portfolio{
+
+}
+
+.bg-jumbotron{
+    background: #141414;
+    /* color: #4ec936; */
 }
