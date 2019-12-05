@@ -1,15 +1,14 @@
+/* General */
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    background: #141414;
-    color: white!important;
-    font-family: 'PT Sans', sans-serif!important;
-    line-height: 1.6;
-    height: 100vh;
+    font-family: 'Roboto Condensed', sans-serif!important;
 }
+
+/* Sections - General */
 
 section {
     width: 100%;
@@ -18,38 +17,21 @@ section {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    scroll-snap-align: center;
 }
 
-#Home{
-    background: #50ff40;
-    color: #141414!important;
-}
+/* Section S (Start) */
 
-#Thome{
-    color: white;
-}
-
-#About{
-    background: #ffffff;
-    color: #50ff40!important;
-}
-
-#Tabout{
+.SMessage{
+    background-color: #FFFFFF!important;
     color: #141414;
+    font-style: italic;
+    font-size:64px;
+    line-height: 75px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.05)
 }
 
-#Portfolio{
-    background: #141414;
-    color: white;
-}
-
-#Tport{
-    color: #50ff40;
-}
-
-
-.bg-jumbotron{
-    background: #141414;
-    /* color: #4ec936; */
+.SGreenT{
+    font-weight: bold;
+    color: #50FF40;
 }
