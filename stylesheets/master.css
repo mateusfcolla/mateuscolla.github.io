@@ -1,1 +1,116 @@
-/* No CSS *//*# sourceMappingURL=master.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Roboto Condensed;
+  color: #141414;
+}
+
+.container {
+  height: 100vh;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header h1 {
+  text-align: center;
+  font-style: italic;
+  color: #141414;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 .GreenT {
+  font-weight: bold;
+  color: #50FF40;
+  text-transform: uppercase;
+}
+
+section {
+  height: 100vh;
+}
+
+section nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: navbar;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20pt;
+  padding-top: 1rem;
+}
+
+section .mainText {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: text;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .mainText h1 {
+  color: #141414;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 34px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+section .links {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: links;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section .links a {
+  text-decoration: none;
+  -webkit-transition: 0.05s;
+  transition: 0.05s;
+  padding-bottom: 1rem;
+}
+
+section .links a:hover {
+  color: #FFFFFF;
+}
+
+.Home {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "navbar" "text" "links";
+  background-color: #50FF40;
+  color: #141414;
+}
+/*# sourceMappingURL=master.css.map */
