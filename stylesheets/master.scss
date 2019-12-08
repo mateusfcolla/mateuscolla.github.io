@@ -1,0 +1,13 @@
+$dark : #141414;
+$green: #50FF40;
+$light: #FFFFFF;
+
+@mixin flexMiddle($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+// @include flexMiddle(column);
+// @import '/name'; Name with _
