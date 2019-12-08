@@ -40,6 +40,16 @@ section {
   height: 100vh;
 }
 
+section .bgb {
+  width: 100%;
+  height: 30%;
+  padding: 0;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  position: absolute;
+}
+
 section nav {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -87,12 +97,16 @@ section .links {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section .links a {
   text-decoration: none;
+  z-index: 999;
+  margin-left: 1rem;
+  margin-right: 1rem;
   -webkit-transition: 0.05s;
   transition: 0.05s;
   padding-bottom: 1rem;
@@ -110,7 +124,7 @@ section .links a:hover {
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas: "navbar" "text" "links";
-  background-color: #50FF40;
+  background: #50FF40;
   color: #141414;
 }
 /*# sourceMappingURL=master.css.map */
