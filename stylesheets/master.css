@@ -104,7 +104,6 @@ section .links {
 
 section .links a {
   text-decoration: none;
-  z-index: 999;
   margin-left: 1rem;
   margin-right: 1rem;
   -webkit-transition: 0.05s;
