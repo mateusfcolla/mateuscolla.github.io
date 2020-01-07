@@ -1,0 +1,117 @@
+$dark : #141414;
+$green: #50FF40;
+$light: #FFFFFF;
+
+@import 'functions';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto Condensed;
+    color: $dark;
+}
+
+.container{
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    @include FxCenter;
+        h1{
+        text-align: center;
+        font-style: italic;
+        color: $dark;
+        text-shadow: 0px 4px 4px rgba(0,0,0,0.1);
+            .GreenT{
+            font-weight: bold;
+            color: $green;
+            text-transform: uppercase;
+            }
+    }
+}
+
+section{
+    height: 100vh;
+    .bgb{
+        width:100%;
+        height: 30%;
+        padding: 0;
+        align-self: end;
+        position: absolute;
+
+    }
+    nav{
+        grid-area: navbar;
+        display: flex;
+        justify-content: center;
+        font-size: 20pt;
+        padding-top: 1rem
+    }
+    .mainText{
+        grid-area: text;
+        display: flex;
+        @include FxCenter;
+        h1{
+            color: $dark;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 34px;
+            text-shadow: 0px 4px 4px rgba(0,0,0,0.1);
+        }
+    }
+    .links{
+        grid-area: links;
+        display: flex;
+        @include Fx(end, center);
+        a{
+            text-decoration: none;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            transition: 0.05s;
+            padding-bottom: 1rem;
+            &:hover{
+                color: $light;
+            }
+        }
+    }
+}
+
+.Home{
+    display: grid;
+    @include GridSetup(1fr, 1fr 1fr 1fr);
+    grid-template-areas: "navbar" "text" "links";
+    background: $green;
+    color: $dark;
+}
+
+// .main{
+//     height: 100vh;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-template-rows: 1fr 1fr;
+//     grid-template-areas: "box1 box2" "box3 box3";
+// }
+
+
+// .box1{
+//     background-color: rgb(206, 59, 59);
+//     grid-area: box1;
+// }
+// .box2{
+//     background-color: rgb(81, 59, 206);
+//     grid-area: box2;
+// }
+// .box3{
+//     background-color: rgb(71, 206, 59);
+//     grid-area: box3;
+// }
+
+// .box4{
+//     background-color: rgb(177, 59, 206);
+//     grid-row: 1/4;
+// }
+
+// @include flexMiddle(column);
+// @import '/name'; Name with _
